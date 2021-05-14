@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body main {
+  background: #2e2727;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (3rem)[4];
+      grid-template-columns: repeat(4, 3rem);
+  grid-auto-rows: 3.6rem;
+  gap: .5rem;
+  padding: .5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+}
+
+body main input {
+  grid-column: auto / span 4;
+  border-radius: 0.25rem;
+  border: none;
+  background: #bbbbbb;
+  padding: .5rem;
+  font-size: 1.6rem;
+}
+
+body main input :focus {
+  outline: none;
+}
+
+body main button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: #767574;
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 1.3rem;
+  -webkit-transform: .1s ease;
+          transform: .1s ease;
+}
+
+body main button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: .9;
+}
+
+body main button.operator {
+  background: #648364;
+}
+
+body main button.dark {
+  background: black;
+}
+/*# sourceMappingURL=main.css.map */
